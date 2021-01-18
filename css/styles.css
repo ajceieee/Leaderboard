@@ -1,0 +1,177 @@
+body {
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: bold;
+  background: linear-gradient(276deg, #af00ff, #00c5ff, #0c006c);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite;
+  margin-left: 5.85vw;
+  margin-top: 2.92vw;
+  margin-right: 3.66vw;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+      background-position: 0% 20%
+  }
+  50% {
+      background-position: 100% 81%
+  }
+  100% {
+      background-position: 0% 20%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+      background-position: 0% 20%
+  }
+  50% {
+      background-position: 100% 81%
+  }
+  100% {
+      background-position: 0% 20%
+  }
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: #ffdf5a;
+  }
+  25% {
+    background-color: rgb(50, 160, 233);
+  }
+  50% {
+    background-color: #f76b8a;
+  }
+  75% {
+    background-color: brown;
+  }
+  100% {
+    background-color: rgb(192, 100, 100);
+  }
+}
+
+/* Simple Card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  justify-content: center;
+  max-width: 100%;
+  padding: 24px;
+  margin: 50px auto;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: roboto;
+  font-weight: 900;
+  letter-spacing: 3;
+  color: rgba(128,130,130,1);
+}
+
+.event-name {
+  text-align: center;
+  font-size: 60px;
+  color: #ffa300;
+  font-family: Poppins;
+  font-weight: 900;
+}
+.card-content {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 500;
+  color: grey;
+  width: 800px;
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+
+.card-footer {
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 400;
+  color: 	#808080;
+}
+
+/* table */
+
+.form-inline {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+}
+
+#myInput {
+  width: 100%;
+  border-radius: 50px;
+  padding: 25px;
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: inherit; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px;
+  /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px;
+  font-family: Poppins; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+  font-family: Poppins;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+.search-input {
+  position: relative;
+  left: 450px;
+}
+
+.search-item {
+  position: relative;
+  left: 455px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(93, 156, 240);
+  border: 0;
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 40px;
+}
+
+.input-cont {
+  padding-left: 40px !important;
+}
+
+button {
+  border-radius: 50%;
+}
+
+@media (max-width: 505px) {
+  .event-name {
+    font-size: 40px;
+  }
+}

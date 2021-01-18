@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <title>Leaderboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,900;1,100;1,200&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+
+  
+    <script
+      src="https://kit.fontawesome.com/0ad26dfd7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <section>
+      <div class="main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="event-name">
+                  <strong>QuaRunTime</strong>
+                </div>
+                <div class="card-title">
+                  <strong>Leaderboard</strong>
+                </div>
+                <form class="form-inline">
+                  <i class="fas fa-search search-icon"></i>
+                  <input
+                    class="form-control form-control-md w-80 active input-cont"
+                    type="text"
+                    placeholder="Search Your Name"
+                    aria-label="Search"
+                    onkeyup="searchName()"
+                    id="myInput"
+                  />
+                </form>
+
+                <div class="table-responsive">
+                  <table id="myTable" class="table">
+                    <tr class="header">
+                      <thead class="thead">
+                        <th scope="col">Rank</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Points</th>
+                      </thead>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
