@@ -1,34 +1,35 @@
-var url =
-  "https://spreadsheets.google.com/feeds/cells/1jFYXinwU3a-9-w_PlVIn6IBoSGn1d7cMJZr7L2KUJp0/1/public/values?alt=json";
+var url = "https://treasurehunt-backend-cs.herokuapp.com/leaderboard";
 
-// AJAX Request
-var leaderBoard = new XMLHttpRequest();
-leaderBoard.open("GET", url);
-leaderBoard.send();
 
-leaderBoard.addEventListener("load", function (e) {
-  var data = e.target.response;
-  var response = JSON.parse(data);
-  let resultsData = response.feed.entry;
-  if (resultsData) {
-    $("body").addClass("loaded");
+async function getLeaderboard() {
+  let resultsData = null;
+  try {
+    const res = await fetch(url);
+    resultsData = await res.json();
+    if (resultsData) {
+      $("body").addClass("loaded");
+    }
+    resultsData.result.forEach(result => {
+      var container = document.querySelector("#myTable");
+      container.innerHTML += `<tr class="data">
+        <td>
+        ${result.id}
+        </td>
+        <td>
+        ${result.name} 
+        </td>
+        <td> 
+        ${result.points}
+        </td> 
+        </tr>`;
+    })  
+  } catch(err) {
+    console.log(err);
+    alert("Something went wrong while loading the leaderboard.");
   }
-  for (var i = 3; i < resultsData.length; i = i + 3) {
-    var container = document.querySelector("#myTable");
-    if (resultsData[i].content.$t == null) resultsData[i].content.$t = 0;
-    container.innerHTML += `<tr class="data">
-      <td>
-     ${resultsData[i].content.$t}
-      </td>
-      <td>
-      ${resultsData[i + 1].content.$t} 
-      </td>
-      <td> 
-      ${resultsData[i + 2].content.$t}
-      </td> 
-      </tr>`;
-  }
-});
+}
+
+getLeaderboard();
 
 function searchName() {
   // Declare variables
