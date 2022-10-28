@@ -120,7 +120,7 @@ body {
 #myTable {
   border-collapse: collapse; /* Collapse borders */
   width: inherit; /* Full-width */
-  border: 1px solid rgb(0 84 76 / 58%); /* Add a grey border */
+  border: 2px solid rgb(0 84 76 / 58%); /* Add a grey border */
   font-size: 18px;
   /* Increase font-size */
 }
@@ -130,11 +130,13 @@ body {
   text-align: left; /* Left-align text */
   padding: 12px;
   font-family: Poppins; /* Add padding */
+  border-top: 2px solid rgb(0 84 76 / 58%);
+  border-bottom: 2px solid rgba(0, 84, 76, 0.712);
 }
 
 #myTable tr {
   /* Add a bottom border to all table rows */
-  border-bottom: 1px solid rgb(0 84 76 / 58%);
+  border-bottom: 2px solid rgb(0 84 76 / 58%);
   font-family: Poppins;
 }
 
