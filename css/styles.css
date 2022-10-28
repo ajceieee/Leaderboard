@@ -75,7 +75,7 @@ body {
   font-family: roboto;
   font-weight: 900;
   letter-spacing: 3;
-  color: rgba(128,130,130,1);
+  color: whitesmoke;
 }
 
 .event-name {
@@ -120,7 +120,7 @@ body {
 #myTable {
   border-collapse: collapse; /* Collapse borders */
   width: inherit; /* Full-width */
-  border: 1px solid #ddd; /* Add a grey border */
+  border: 1px solid rgb(0 84 76 / 58%); /* Add a grey border */
   font-size: 18px;
   /* Increase font-size */
 }
