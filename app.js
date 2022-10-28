@@ -12,13 +12,13 @@ async function getLeaderboard() {
     resultsData.result.forEach(result => {
       var container = document.querySelector("#myTable");
       container.innerHTML += `<tr class="data">
-        <td>
+        <td class='text-white'>
         ${result.id}
         </td>
-        <td>
+        <td class='text-white'>
         ${result.name} 
         </td>
-        <td> 
+        <td class='text-white'> 
         ${result.points}
         </td> 
         </tr>`;

@@ -1,7 +1,7 @@
 body {
   width: 100%;
   height: 100%;
-  color: black;
+  color: whitesmoke;
   font-weight: bold;
   /* background: linear-gradient(276deg, #af00ff, #00c5ff, #0c006c); */
   background-color: #003044;
@@ -58,6 +58,8 @@ body {
 /* Simple Card */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(255,255,255, 0.05) !important;
+  backdrop-filter: blur(0.4rem);
   transition: 0.3s;
   border-radius: 10px;
   justify-content: center;
@@ -139,7 +141,7 @@ body {
 #myTable tr.header,
 #myTable tr:hover {
   /* Add a grey background color to the table header and on hover */
-  background-color: #f1f1f1;
+  background-color: #f1f1f11f;
 }
 
 .search-input {
