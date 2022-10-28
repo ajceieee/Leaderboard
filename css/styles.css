@@ -3,7 +3,8 @@ body {
   height: 100%;
   color: black;
   font-weight: bold;
-  background: linear-gradient(276deg, #af00ff, #00c5ff, #0c006c);
+  /* background: linear-gradient(276deg, #af00ff, #00c5ff, #0c006c); */
+  background-color: #003044;
   background-size: 600% 600%;
   -webkit-animation: AnimationName 24s ease infinite;
   animation: AnimationName 24s ease infinite;
